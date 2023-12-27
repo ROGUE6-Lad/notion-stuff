@@ -109,7 +109,7 @@
       <!-- End twitter Icon -->
 
       <!-- Start youtube Icon -->
-      <div id="youtube" onclick="http://www.youtube.com/channel/UC2sp4Qfo2STZOklk9ZxZuOw" class="social">
+      <div id="youtube" onclick="navigate(this.id)" class="social">
         <span class="icon youtube"><i class="fab fa-youtube"></i></span>
       </div>
       <!-- End youtube Icon -->
@@ -180,7 +180,9 @@
           window.open("https://web.telegram.org/", '_blank').focus(); //Add the url to your telegram account
         } 
         else if (id === "discord") {
-          window.open("http://discord.gg/9xsVT3Y6H5", '_blank', 'noopener, noreferrer'); //Add the url to your telegram account
+          var redirectWindow = window.open('http://discord.gg/9xsVT3Y6H5', '_blank');
+    redirectWindow.location;
+          //window.open("http://discord.gg/9xsVT3Y6H5", '_blank', 'noopener, noreferrer'); //Add the url to your telegram account
         }
       }
 

@@ -155,8 +155,9 @@
           window.open("https://facebook.com/", '_blank').focus(); //Add the url to your facebook page or account
         }
         else if (id === "instagram") {
-          Browser
-          window.open("http://www.instagram.com/rogue6games?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==", '_blank', 'noopener, noreferrer'); //Add the url to your instagram account
+          var redirectWindow = window.open('http://www.instagram.com/rogue6games?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==', '_blank');
+    redirectWindow.location;
+         // window.open("http://www.instagram.com/rogue6games?utm_source=ig_web_button_share_sheet&igsh=OGQ5ZDc2ODk2ZA==", '_blank', 'noopener, noreferrer'); //Add the url to your instagram account
         }
         else if (id === "linkedin") {
           window.open("https://www.linkedin.com/", '_blank').focus(); //Add the url to your pinterest account
